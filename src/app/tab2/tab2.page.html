@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="success">
+  <ion-toolbar color="secondary">
     <ion-title>
-      Parques
+      Praias
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,13 +10,191 @@
   <ion-item-sliding>
     <ion-item [button]="true">
       <ion-avatar aria-hidden="true" slot="start">
-        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        <img alt="Praia do Refugio" src="../../assets/imgs/foto-praia-refugio.png" />
       </ion-avatar>
-      <ion-label>Leeroy Jenkins</ion-label>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Praia do Refugio</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
     </ion-item>
     <ion-item-options slot="end">
-      <ion-item-option color="warning">
-        <ion-icon slot="icon-only" name="pin"></ion-icon>
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Praia+do+Ref%C3%BAgio/@-11.0528564,-37.0927816,15z/data=!3m1!4b1!4m6!3m5!1s0x71abae3f7476ed3:0x877816e063513a11!8m2!3d-11.061321!4d-37.098148!16s%2Fg%2F11h4dkw8wh?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/praia-da-costa-sergipe.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Praia da Costa</h2>
+        </ion-text>
+        <p>Barra dos Coqueiros-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Praia+da+Costa/@-10.9285563,-37.0125616,15z/data=!3m1!4b1!4m6!3m5!1s0x71ab442862223b7:0x470c84c13ecbaaaa!8m2!3d-10.9291412!4d-37.0136124!16s%2Fg%2F11hz8nh1g8?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/ilha-dos-namorados.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Ilha dos Namorados</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Ilha+dos+Namorados/@-10.9989955,-37.3180983,16z/data=!4m6!3m5!1s0x71aa31072d19cdf:0xe37b312a90902a20!8m2!3d-11.1509989!4d-37.1644632!16s%2Fg%2F11hz4z864d?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/croa-do-gore.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Crôa do Goré</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/search/Cr%C3%B4a+do+Gor%C3%A9/@-11.1013522,-37.1553509,15.47z?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/praia-de-aruana.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Praia de Aruanas</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Praia+de+Aruana/@-11.005272,-37.0937573,13.83z/data=!4m6!3m5!1s0x71ab090451fdc13:0x7e77c7d8e4150e79!8m2!3d-11.018548!4d-37.070348!16s%2Fg%2F11j0v0z8ng?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/praia-do-mosqueiro.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Praia do Mosqueiro</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Praia+do+Mosqueiro/@-11.1172821,-37.1567729,14z/data=!3m1!4b1!4m6!3m5!1s0x71abb555ae0c809:0xf40781c3df7bf007!8m2!3d-11.1139401!4d-37.1345344!16s%2Fg%2F120ylmg_?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/prainha-bar.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Prainha</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps?sca_esv=b3b81d1d30ec7baa&sca_upv=1&biw=2560&bih=1260&output=search&q=prainha+aracaju&source=lnms&fbs=AEQNm0AuaLfhdrtx2b9ODfK0pnmi046uB92frSWoVskpBryHTlk_BnclDEVJ373ohNdpcnU_dDKC65KMxPtxgLLtLLtV0CBFwLM6IuDoFwJv9KeH4jwtgWGm7CfYm8_Xa58_GMnERLNi_VzyZW_QxoD4oid7UXM0HmP8PrXibB0R9f4Dpdoj3RX_VmhE5odF88mPeu5eZGq_KlHVi7EdRr6SkHeeYIIu3Q&entry=mc&ved=1t:200715&ictx=111')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item [button]="true">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="Praia do Refugio" src="../../assets/imgs/praia-do-saco.png" />
+      </ion-avatar>
+      <ion-label>
+        <ion-text color="secondary">
+          <h2>Praia do Saco</h2>
+        </ion-text>
+        <p>Aracaju-SE</p>
+      </ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option
+        (click)="openSite('https://www.google.com/maps/place/Praia+do+Saco/@-11.3892227,-37.2946546,13z/data=!4m10!1m2!2m1!1sPraia+do+Saco!3m6!1s0x7107f3f124642fd:0xd53b2b3eefeb3f99!8m2!3d-11.3955354!4d-37.3099051!15sCg1QcmFpYSBkbyBTYWNvkgEFYmVhY2jgAQA!16s%2Fg%2F1ymtpdgmv?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D')"
+        color="danger">
+        <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="like()">
+        <ion-icon slot="icon-only" name="star-outline"></ion-icon>
       </ion-item-option>
     </ion-item-options>
   </ion-item-sliding>
