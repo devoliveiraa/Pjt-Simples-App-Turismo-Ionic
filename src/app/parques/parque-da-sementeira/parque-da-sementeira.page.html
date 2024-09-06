@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Parque da Sementeira</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+
+      <swiper-container  pager="true" class="swiper">
+        <swiper-slide >
+          <ion-img src="../../../assets/imgs/sementeira.png"></ion-img>
+        </swiper-slide>
+        <swiper-slide >
+          <ion-img src="../../../assets/imgs/sementeira2.png"></ion-img>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-img src="../../../assets/imgs/sementeira3.png"></ion-img>
+        </swiper-slide>
+      </swiper-container>
+      <ion-card-content  class="ion-text-justify">
+        O “Parque da Sementeira” pela sua história, como lugar de pesquisa agropecuária, difusão de mudas de “laranjeira e coqueiro”, e provedor de áreas para órgãos vitais ao progresso como EMBRAPA, CODEVASF e o destacado bairro Jardins, enriquece a cidade de Aracaju. O “Parque” foi adotado pelo povo sergipano com pertencimento, zelo e afeto.
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>Endereço</ion-label>
+      <ion-button fill="outline" href="https://www.google.com/maps/place/Parque+da+Sementeira/@-10.9443374,-37.0559138,17z/data=!3m1!4b1!4m6!3m5!1s0x71ab386b4e18213:0x4601ead8d241770c!8m2!3d-10.9443374!4d-37.0533389!16s%2Fg%2F1td8z9xw?hl=pt-BR&entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">VER NO MAPA</ion-button>
+    </ion-item>
+    <ion-card-content>
+      Fica na Avenida Ivo do Prado, com acesso fácil a partir do centro de Aracaju.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="time-outline" slot="start"></ion-icon>
+      <ion-label>Horário de Funcionamento</ion-label>
+    </ion-item>
+    <ion-card-content>
+      De domingo a domingo, das 05:00 às 21:30.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="happy-outline" slot="start"></ion-icon>
+      <ion-label>Parquinhos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="football-outline" slot="start"></ion-icon>
+      <ion-label>Campo de Futebol</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="football-outline" slot="start"></ion-icon>
+      <ion-label>Quadra de Futebol</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="walk-outline" slot="start"></ion-icon>
+      <ion-label>Pista para Caminhadas</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="barbell-outline" slot="start"></ion-icon>
+      <ion-label>Aparelhos para Exercícios Físicos</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>
